@@ -409,5 +409,5 @@ elif menu_option == "Testowanie Modelu":
             st.table(results)
     else:
         st.warning("Brak dostępnych modeli.")
-
+#Autoirzy
 show_footer()
