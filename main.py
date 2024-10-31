@@ -404,9 +404,8 @@ elif menu_option == "Testowanie Modelu":
         selected_model_name = st.selectbox("Wybierz model do testu:", list(models.keys()))
         if selected_model_name:
             selected_model = models[selected_model_name]
-            results = test_model_on_test_samples(selected_model)
             st.write("Wyniki testu na obrazach testowych:")
-            st.table(results)
+            results = test_model_on_test_samples(selected_model)
     else:
         st.warning("Brak dostępnych modeli.")
 #Autoirzy
